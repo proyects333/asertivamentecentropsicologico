@@ -1,15 +1,110 @@
-/* Presentacion de la historia y los valores del centro. */
+/* Presentación de la historia y los valores del centro. */
 .about-page .page-heading {
-	border-left: 4px solid #e6a66a;
-	padding-left: 1.25rem;
+    border-left: 4px solid #e6a66a;
+    padding-left: 1.25rem;
 }
 
 .about-page .feature-panel {
-	min-height: 220px;
-	transition: transform 0.2s, box-shadow 0.2s;
+    min-height: 220px;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .about-page .feature-panel:hover {
-	transform: translateY(-5px);
-	box-shadow: 0 16px 34px rgba(36, 61, 59, 0.12);
+    transform: translateY(-5px);
+    box-shadow: 0 16px 34px rgba(36, 61, 59, 0.12);
+}
+
+/* --- Nuevos Estilos Agregados --- */
+
+/* Disposición de la sección Hero (Texto + Imagen) */
+.about-hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .about-hero {
+        grid-template-columns: 1.2fr 0.8fr;
+    }
+}
+
+.about-img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Grilla para Misión, Visión, Objetivo y Valores */
+.about-pillars {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+    .about-pillars {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .pillar-card.full-width {
+        grid-column: span 3;
+    }
+}
+
+.pillar-card {
+    background-color: #f9fbfb;
+    border: 1px solid #e2ece9;
+    border-top: 4px solid #e6a66a;
+    border-radius: 8px;
+    padding: 1.75rem;
+}
+
+.pillar-card h3 {
+    margin-top: 0;
+    color: #243d3b;
+    margin-bottom: 0.75rem;
+}
+
+.pillar-card p {
+    margin-bottom: 0;
+    color: #4a5d5b;
+    line-height: 1.6;
+}
+
+/* Lista de Valores */
+.values-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+}
+
+@media (min-width: 600px) {
+    .values-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.values-list li {
+    color: #4a5d5b;
+    padding-left: 1.25rem;
+    position: relative;
+}
+
+.values-list li::before {
+    content: "•";
+    color: #e6a66a;
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 0;
+    top: -2px;
 }
