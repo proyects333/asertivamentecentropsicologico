@@ -19,9 +19,68 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.15rem 3.2rem;
-  background-color: #fffdf9;
+  background-color: #eef0ee;
   border-top: 2px solid #263d3b;
   box-shadow: 0 4px 18px rgba(36, 61, 59, 0.08);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: #145a55;
+  text-decoration: none;
+  font-size: 1.15rem;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.brand img {
+  width: 92px;
+  height: 68px;
+  display: block;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+.brand-copy {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.brand-copy strong {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.brand-copy small {
+  margin-top: 0.22rem;
+  color: #5f7890;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.home-header {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  background: rgba(22, 40, 42, 0.5);
+  border-top: 0;
+  box-shadow: none;
+}
+
+.home-header .nav a {
+  color: #fff;
+}
+
+.home-header .brand {
+  color: #fff;
+}
+
+.home-header .brand-copy small {
+  color: #e8f2f0;
 }
 
 .logo {
@@ -56,7 +115,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(135deg, #e3f0ed 0%, #d8ebe7 58%, #cfe2df 100%);
+  background: linear-gradient(135deg, #dfeee9 0%, #bfd8d0 58%, #8fb6aa 100%);
   padding: 5rem 1.5rem;
 }
 
@@ -77,6 +136,16 @@ body {
   line-height: 1.08;
   margin-bottom: 1rem;
   color: #2f4f4a;
+}
+
+.home-header + .hero .hero-content h1 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.home-header + .hero .hero-content p:not(.eyebrow) {
+  color: #fff;
 }
 
 .hero-content p {
@@ -124,8 +193,11 @@ body {
 
 @media (max-width: 760px) {
   .header { align-items: flex-start; flex-direction: column; gap: 1rem; padding: 1rem 1.25rem; }
+  .home-header { position: relative; background: #2f5b56; }
   .nav { display: flex; flex-wrap: wrap; gap: 0.65rem 1rem; }
   .nav a, .nav a:first-child { margin-left: 0; }
+  .brand img { width: 78px; height: 58px; }
+  .brand-copy strong { font-size: 1.1rem; }
   .page-shell { width: min(100% - 2rem, 600px); padding: 3.5rem 0; }
   .about-grid, .team-grid, .services-grid { grid-template-columns: 1fr; }
   .service-card-featured { transform: none; }
