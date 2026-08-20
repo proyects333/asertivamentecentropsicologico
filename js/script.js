@@ -53,19 +53,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     question.addEventListener('click', () => {
-      const isActive = item.classList.contains('active');
-      
-      // Cerrar todos los demás
-      faqItems.forEach(otherItem => {
-        otherItem.classList.remove('active');
-        otherItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
-      });
-      
-      // Abrir el actual si no estaba activo
-      if (!isActive) {
-        item.classList.add('active');
-        question.setAttribute('aria-expanded', 'true');
-      }
+      // Cada pregunta se abre y cierra de forma independiente,
+      // sin afectar el estado de las demás.
+      const isActive = item.classList.toggle('active');
+      question.setAttribute('aria-expanded', String(isActive));
     });
   });
 

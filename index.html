@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AsertivaMente | Centro Psicológico en Trujillo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -31,16 +34,52 @@
     <!-- HERO -->
     <section class="hero-home">
       <div class="hero-overlay"></div>
-      <div class="hero-content-home reveal">
-        <p class="eyebrow-home">Bienvenidos a</p>
-        <h1 class="hero-title">ASERTIVAMENTE</h1>
-        <p class="hero-subtitle">Centro Psicológico</p>
-        <p class="hero-desc">Acompañamiento psicológico profesional para ti y tu familia. Un espacio seguro donde sanar, crecer y transformar tu vida.</p>
-        <div class="hero-buttons">
-          <a href="ayuda.html" class="btn btn-primary">Agendar una cita</a>
+
+      <div class="hero-blobs" aria-hidden="true">
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+        <span class="blob blob-3"></span>
+      </div>
+
+      <div class="hero-content-home">
+        <p class="eyebrow-home hero-anim" style="--d:0.05s">Bienvenidos a</p>
+        <h1 class="hero-title hero-anim" style="--d:0.2s">Asertivamente</h1>
+        <p class="hero-subtitle hero-anim" style="--d:0.35s">Centro Psicológico</p>
+        <p class="hero-desc hero-anim" style="--d:0.5s">Acompañamiento psicológico profesional para ti y tu familia. Un espacio seguro donde sanar, crecer y transformar tu vida.</p>
+
+        <div class="hero-buttons hero-anim" style="--d:0.65s">
+          <a href="ayuda.html" class="btn btn-primary">
+            <span>Agendar una cita</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
           <a href="#quienes-somos" class="btn btn-outline">Conócenos</a>
         </div>
+
+        <div class="hero-stats hero-anim" style="--d:0.8s">
+          <div class="hero-stat">
+            <strong>+5</strong>
+            <span>años acompañando procesos</span>
+          </div>
+          <span class="hero-stat-divider" aria-hidden="true"></span>
+          <div class="hero-stat">
+            <strong>100%</strong>
+            <span>confidencial</span>
+          </div>
+          <span class="hero-stat-divider" aria-hidden="true"></span>
+          <div class="hero-stat">
+            <strong>Virtual</strong>
+            <span>y presencial</span>
+          </div>
+        </div>
       </div>
+
+      <div class="breathing-guide hero-anim" style="--d:1.1s" aria-hidden="true">
+        <span class="breathing-ring breathing-ring-2"></span>
+        <span class="breathing-ring breathing-ring-1"></span>
+        <span class="breathing-dot"></span>
+        <p class="breathing-label">Respira. Estás en un espacio seguro.</p>
+      </div>
+
       <div class="scroll-indicator">
         <i class="fas fa-chevron-down"></i>
       </div>
@@ -192,7 +231,7 @@
               <i class="fas fa-map-marker-alt"></i>
               <div>
                 <strong>Dirección</strong>
-                <span>Av. Prolongación César Vallejo 1366, Trujillo</span>
+                <span>Av. Prol. César Vallejo 1366, Trujillo 13001</span>
               </div>
             </li>
             <li>
@@ -203,7 +242,7 @@
               </div>
             </li>
           </ul>
-          <a href="https://wa.me/51999999999" class="btn btn-primary" target="_blank">
+          <a href="https://wa.me/51966941229" class="btn btn-primary" target="_blank">
             <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
           </a>
         </div>
@@ -218,6 +257,9 @@
             referrerpolicy="no-referrer-when-downgrade"
             title="Ubicación AsertivaMente">
           </iframe>
+          <a class="map-link" href="https://maps.app.goo.gl/vT2vbnPLq6Pjrkya9" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-map-marker-alt"></i> Ver ubicación en Google Maps
+          </a>
         </div>
       </div>
     </section>
@@ -239,9 +281,9 @@
       <div class="footer-col">
         <h4>Contáctanos</h4>
         <ul>
-          <li><i class="fas fa-map-marker-alt"></i> Av. Prolongación César Vallejo 1366</li>
-          <li><i class="fas fa-envelope"></i> hola@asertivamente.com</li>
-          <li><i class="fas fa-phone"></i> +51 999 999 999</li>
+          <li><i class="fas fa-map-marker-alt"></i> Av. Prol. César Vallejo 1366, Trujillo 13001</li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:centropsicologicoasertivamente@gmail.com">centropsicologicoasertivamente@gmail.com</a></li>
+          <li><i class="fas fa-phone"></i> <a href="tel:+51966941229">966 941 229</a></li>
         </ul>
       </div>
       <div class="footer-col">
