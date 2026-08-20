@@ -3,39 +3,270 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< Updated upstream
-  <title>Centr Psicológico | Inicio</title>
+  <title>AsertivaMente | Centro Psicológico en Trujillo</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-  <header class="header home-header">
+  <header class="header home-header" id="header">
     <a class="brand" href="index.html" aria-label="AsertivaMente, inicio">
       <img src="img/logocentro.png" alt="Logo AsertivaMente Centro Psicológico">
       <span class="brand-copy"><strong>AsertivaMente</strong><small>Centro Psicológico</small></span>
     </a>
-    <nav class="nav">
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+      <i class="fas fa-bars"></i>
+    </button>
+    <nav class="nav" id="mainNav" aria-label="Navegación principal">
       <a href="index.html" class="active">Inicio</a>
       <a href="nosotros.html">Nosotros</a>
       <a href="servicios.html">Servicios</a>
       <a href="equipo.html">Equipo</a>
       <a href="ubicacion.html">Ubicación</a>
-      <a href="ayuda.html">Ayuda</a>
+      <a href="ayuda.html" class="nav-cta">Agendar cita</a>
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <p class="eyebrow">AsertivaMente</p>
-      <h1>Centro psicológico</h1>
-      <p>Acompañamiento psicológico profesional para ti y tu familia.</p>
-      <a href="ayuda.html" class="btn">Solicitar una cita</a>
-    </div>
-  </section>
+  <main>
+    <!-- HERO -->
+    <section class="hero-home">
+      <div class="hero-overlay"></div>
+      <div class="hero-content-home reveal">
+        <p class="eyebrow-home">Bienvenidos a</p>
+        <h1 class="hero-title">ASERTIVAMENTE</h1>
+        <p class="hero-subtitle">Centro Psicológico</p>
+        <p class="hero-desc">Acompañamiento psicológico profesional para ti y tu familia. Un espacio seguro donde sanar, crecer y transformar tu vida.</p>
+        <div class="hero-buttons">
+          <a href="ayuda.html" class="btn btn-primary">Agendar una cita</a>
+          <a href="#quienes-somos" class="btn btn-outline">Conócenos</a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </section>
 
-  <footer class="footer">
-    <p>&copy; 2026 AsertivaMente. Todos los derechos reservados.</p>
+    <!-- CITA -->
+    <section class="quote-section">
+      <div class="quote-container reveal">
+        <div class="quote-line"></div>
+        <blockquote>
+          <i class="fas fa-quote-left quote-icon"></i>
+          A veces, el mayor acto de valentía es pedir ayuda.
+        </blockquote>
+        <div class="quote-line"></div>
+      </div>
+    </section>
+
+    <!-- ¿QUIÉNES SOMOS? -->
+    <section class="about-home" id="quienes-somos">
+      <div class="about-image reveal-left">
+        <img src="img/equipo.jpg" alt="Equipo de psicólogos AsertivaMente">
+        <div class="about-image-decor"></div>
+      </div>
+      <div class="about-content reveal-right">
+        <p class="eyebrow-home">Conócenos</p>
+        <h2>¿Quiénes somos?</h2>
+        <p>Somos <strong>AsertivaMente</strong>, un espacio creado para quienes se atreven a explorar su mundo interior con valentía y curiosidad. No creemos en soluciones rápidas ni en etiquetas vacías: acompañamos en procesos reales, profundos y humanos.</p>
+        <p>Aquí, la psicología no es solo técnica, es también arte, escucha, conexión y presencia. Trabajamos para que cada persona que nos encuentre descubra en sí misma la fuerza para transformar su vida.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ¿POR QUÉ ESCOGERNOS? -->
+    <section class="why-us">
+      <div class="why-header reveal">
+        <p class="eyebrow-home">Nuestras fortalezas</p>
+        <h2>¿Por qué escogernos?</h2>
+      </div>
+      <div class="why-wrapper">
+        <div class="why-image reveal-left">
+          <img src="img/porque-escogernos.png" alt="Diversidad y bienestar emocional">
+        </div>
+        <div class="why-grid">
+          <article class="why-card reveal">
+            <div class="why-icon"><i class="fas fa-heart"></i></div>
+            <div class="why-text">
+              <h3>Atención integral con calidez humana</h3>
+              <p>Combinamos profesionalismo con cercanía emocional. Cada paciente es atendido con empatía, respeto y sin juicios.</p>
+            </div>
+          </article>
+          <article class="why-card reveal">
+            <div class="why-icon"><i class="fas fa-user-md"></i></div>
+            <div class="why-text">
+              <h3>Especialistas en distintas áreas</h3>
+              <p>Psicólogos formados en clínica, educativa, infantil, pareja, adultos y neuropsicología para una atención personalizada.</p>
+            </div>
+          </article>
+          <article class="why-card reveal">
+            <div class="why-icon"><i class="fas fa-spa"></i></div>
+            <div class="why-text">
+              <h3>Servicios complementarios de bienestar</h3>
+              <p>Terapia de relajación con masajes, talleres grupales y técnicas de equilibrio mente-cuerpo.</p>
+            </div>
+          </article>
+          <article class="why-card reveal">
+            <div class="why-icon"><i class="fas fa-shield-alt"></i></div>
+            <div class="why-text">
+              <h3>Compromiso con la ética y confidencialidad</h3>
+              <p>Protocolos estrictos que garantizan un entorno seguro y profesional en todo momento.</p>
+            </div>
+          </article>
+          <article class="why-card reveal">
+            <div class="why-icon"><i class="fas fa-clock"></i></div>
+            <div class="why-text">
+              <h3>Flexibilidad y accesibilidad</h3>
+              <p>Atención presencial y virtual con horarios flexibles adaptados a tu ritmo de vida.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES -->
+    <section class="faq-section">
+      <div class="faq-header reveal">
+        <p class="eyebrow-home">Resolvemos tus dudas</p>
+        <h2>Preguntas Frecuentes</h2>
+      </div>
+      <div class="faq-container">
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false">
+            <span>¿Qué tipos de terapia ofrecen?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Ofrecemos terapias individuales para niños, adolescentes y adultos, terapia de pareja y familiar. También contamos con terapias complementarias como relajación con masajes y talleres grupales.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false">
+            <span>¿Cómo sé si necesito ir al psicólogo?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Si te sientes abrumado, con ansiedad, tristeza, dificultades para dormir, conflictos personales o simplemente quieres conocerte mejor, la terapia puede ayudarte. No es necesario "estar mal" para buscar apoyo.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false">
+            <span>¿Cuánto dura una sesión?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Cada sesión tiene una duración aproximada de 50 a 60 minutos. El número de sesiones depende de las necesidades y objetivos de cada persona.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false">
+            <span>¿Cuál es el costo de las sesiones?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Contamos con planes accesibles. Te invitamos a escribirnos por WhatsApp o correo para brindarte información detallada sobre tarifas y paquetes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UBICACIÓN -->
+    <section class="location-home" id="ubicacion">
+      <div class="location-content">
+        <div class="location-info reveal-left">
+          <p class="eyebrow-home">Encuéntranos</p>
+          <h2>Ubicación</h2>
+          <ul class="location-list">
+            <li>
+              <i class="fas fa-building"></i>
+              <div>
+                <strong>Nombre</strong>
+                <span>Centro Psicológico AsertivaMente</span>
+              </div>
+            </li>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <strong>Dirección</strong>
+                <span>Av. Prolongación César Vallejo 1366, Trujillo</span>
+              </div>
+            </li>
+            <li>
+              <i class="fas fa-directions"></i>
+              <div>
+                <strong>Referencia</strong>
+                <span>Frente al Real Plaza, a la altura de Oechsle, en una reja de color negro al costado de la tienda Pikara, en el tercer piso.</span>
+              </div>
+            </li>
+          </ul>
+          <a href="https://wa.me/51999999999" class="btn btn-primary" target="_blank">
+            <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
+          </a>
+        </div>
+        <div class="location-map reveal-right">
+          <iframe 
+            src="https://www.google.com/maps?q=Av.+Prol.+C%C3%A9sar+Vallejo+1366,+Trujillo&output=embed" 
+            width="100%" 
+            height="100%" 
+            style="border:0; border-radius: 16px;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Ubicación AsertivaMente">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-home">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="img/logoasertivamente.jpg" alt="Logo AsertivaMente">
+        <p>Transformando vidas con empatía y profesionalismo.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Contáctanos</h4>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> Av. Prolongación César Vallejo 1366</li>
+          <li><i class="fas fa-envelope"></i> hola@asertivamente.com</li>
+          <li><i class="fas fa-phone"></i> +51 999 999 999</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Enlaces rápidos</h4>
+        <ul>
+          <li><a href="nosotros.html">¿Quiénes somos?</a></li>
+          <li><a href="servicios.html">Nuestros servicios</a></li>
+          <li><a href="equipo.html">Nuestro equipo</a></li>
+          <li><a href="ayuda.html">Agendar cita</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Información</h4>
+        <ul>
+          <li><a href="#">Preguntas frecuentes</a></li>
+          <li><a href="#">Términos y condiciones</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 AsertivaMente. Todos los derechos reservados.</p>
+    </div>
   </footer>
-    
+
+  <script src="js/script.js"></script>
 </body>
 </html>
