@@ -1,3 +1,5 @@
+/* ... (Todo el código CSS anterior se mantiene igual) ... */
+
 /* Presentación de la historia y los valores del centro. */
 .about-page .page-heading {
     border-left: 4px solid #e6a66a;
@@ -13,8 +15,6 @@
     transform: translateY(-5px);
     box-shadow: 0 16px 34px rgba(36, 61, 59, 0.12);
 }
-
-/* --- Nuevos Estilos Agregados --- */
 
 /* Disposición de la sección Hero (Texto + Imagen) */
 .about-hero {
@@ -37,6 +37,36 @@
     border-radius: 12px;
     object-fit: cover;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Caja de Ubicación */
+.location-box {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: #f2f7f6;
+    border-radius: 8px;
+    border: 1px solid #dce8e5;
+}
+
+.location-box p {
+    margin: 0 0 0.5rem 0;
+    color: #243d3b;
+}
+
+.location-btn {
+    display: inline-block;
+    background-color: #e6a66a;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
+}
+
+.location-btn:hover {
+    background-color: #d18f53;
 }
 
 /* Grilla para Misión, Visión, Objetivo y Valores */
@@ -107,4 +137,72 @@
     position: absolute;
     left: 0;
     top: -2px;
+}
+
+/* --- SECCIÓN ACTUALIZADA: Botones Flotantes de Redes Sociales --- */
+.floating-socials {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Ligeramente más espacio */
+    z-index: 1000;
+}
+
+.social-btn {
+    width: 50px;  /* Ligeramente más grandes */
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    /* Ajuste de fuente para Font Awesome */
+    font-size: 1.6rem; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+/* Asegurar que el icono esté centrado dentro del flex */
+.social-btn i {
+    display: block;
+    line-height: 1;
+}
+
+.social-btn:hover {
+    transform: scale(1.1) translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+}
+
+/* Colores de marca oficiales */
+
+.social-btn.whatsapp {
+    background-color: #25D366;
+}
+.social-btn.whatsapp:hover {
+    background-color: #20b858;
+}
+
+.social-btn.instagram {
+    /* Gradiente oficial de Instagram más preciso */
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+/* No cambiamos el fondo en hover para Instagram porque es un gradiente complejo, solo la transformación */
+
+.social-btn.facebook {
+    background-color: #1877F2;
+}
+.social-btn.facebook:hover {
+    background-color: #145dbf;
+}
+
+.social-btn.tiktok {
+    background-color: #000000;
+    /* Efecto sutil de 'neon' cian/rojo típico de TikTok en el borde */
+    border: 1px solid rgba(255,255,255,0.1);
+}
+.social-btn.tiktok:hover {
+    background-color: #1a1a1a;
 }

@@ -1,0 +1,567 @@
+/* ============================================================
+   ASERTIVAMENTE - Diseño Creativo y Llamativo para "Nosotros"
+   ============================================================ */
+
+/* 1. Configuraciones Globales del Tema Creativo */
+.creative-theme {
+    font-family: 'Outfit', sans-serif; /* Fuente moderna y limpia */
+    background-color: #fefcfb; /* Fondo base muy suave, casi blanco */
+    color: #243d3b;
+}
+
+/* Degradado de texto global para títulos */
+.gradient-title {
+    background: linear-gradient(135deg, #243d3b 0%, #e6a66a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+/* 2. Sección HÉROE: Diseño Dividido Orgánico */
+.about-hero-split {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-bottom: 4rem;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+@media (min-width: 992px) {
+    .about-hero-split {
+        grid-template-columns: 1.1fr 0.9fr;
+    }
+}
+
+.hero-content-card {
+    background: white;
+    padding: 3rem;
+    border-radius: 30px;
+    box-shadow: 0 20px 50px rgba(36, 61, 59, 0.05);
+    border: 1px solid #f2ece6;
+    position: relative;
+    z-index: 2;
+}
+
+.eyebrow-tag {
+    display: inline-block;
+    background-color: #e6a66a;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.hero-text-block p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #4a5d5b;
+    margin-bottom: 1.5rem;
+}
+
+.hero-text-block strong {
+    color: #243d3b;
+    font-weight: 600;
+}
+
+/* Caja de Ubicación Integrada */
+.location-highlight-card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: #fcf6f0;
+    padding: 1.5rem;
+    border-radius: 20px;
+    margin-top: 2.5rem;
+    border: 1px solid #f2e1d0;
+}
+
+.loc-icon {
+    font-size: 2rem;
+    color: #e6a66a;
+    background: white;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(230, 166, 106, 0.15);
+}
+
+.loc-details {
+    flex: 1;
+}
+
+.loc-address {
+    margin: 0 0 8px 0;
+    font-weight: 600;
+    color: #243d3b;
+}
+
+.maps-btn-creative {
+    display: inline-block;
+    color: #e6a66a;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    position: relative;
+    padding-bottom: 2px;
+}
+
+.maps-btn-creative::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #e6a66a;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.maps-btn-creative:hover::after {
+    transform: scaleX(1);
+}
+
+/* Imagen Héroe Estilizada */
+.hero-image-creative {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-mask-organic {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    /* Máscara orgánica curveda */
+    border-radius: 60% 40% 70% 30% / 40% 70% 30% 60%;
+    overflow: hidden;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.1);
+    border: 5px solid white;
+    z-index: 1;
+}
+
+.about-img-styled {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.hero-image-creative:hover .about-img-styled {
+    transform: scale(1.05);
+}
+
+/* Elemento decorativo detrás de la imagen */
+.decorative-blob {
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background-color: #fcf6f0;
+    border-radius: 50%;
+    z-index: 0;
+    filter: blur(40px);
+    opacity: 0.7;
+}
+
+/* 3. SECCIÓN: Feature Panels con Efecto Glow */
+.about-grid-fancy {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+    .about-grid-fancy {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.feature-panel-fancy {
+    background: white;
+    padding: 3rem 2rem 2rem 2rem;
+    border-radius: 25px;
+    position: relative;
+    border: 1px solid #f2ece6;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+/* Efecto Glow sutil en Hover */
+.feature-panel-fancy:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(230, 166, 106, 0.08);
+}
+
+.feature-panel-fancy::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Glow interno sutil */
+    box-shadow: inset 0 0 15px rgba(230, 166, 106, 0.0); 
+    transition: box-shadow 0.3s ease;
+    border-radius: 25px;
+    pointer-events: none;
+}
+
+.feature-panel-fancy:hover::after {
+    box-shadow: inset 0 0 20px rgba(230, 166, 106, 0.1);
+}
+
+.feature-panel-fancy.panel-1 { border-top: 4px solid #e6a66a; }
+.feature-panel-fancy.panel-2 { border-top: 4px solid #243d3b; }
+
+.panel-icon-circle {
+    position: absolute;
+    top: -25px;
+    left: 30px;
+    background: white;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    border: 1px solid #f2ece6;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.panel-1 .panel-icon-circle { color: #e6a66a; }
+.panel-2 .panel-icon-circle { color: #243d3b; }
+
+.panel-number-fancy {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #f7f3ef;
+    position: absolute;
+    right: 15px;
+    bottom: -15px;
+    line-height: 1;
+    z-index: 0;
+}
+
+.feature-panel-fancy h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #243d3b;
+    position: relative;
+    z-index: 1;
+}
+
+.feature-panel-fancy p {
+    color: #4a5d5b;
+    line-height: 1.7;
+    position: relative;
+    z-index: 1;
+}
+
+/* 4. SECCIÓN: Pilares Ilustrados (Misión, Visión, Objetivo) */
+.about-pillars-creative {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+@media (min-width: 992px) {
+    .about-pillars-creative {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.pillar-card-fancy {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid #f2ece6;
+    transition: transform 0.3s ease;
+}
+
+.pillar-card-fancy:hover {
+    transform: scale(1.03);
+    box-shadow: 0 15px 35px rgba(36, 61, 59, 0.03);
+}
+
+.pillar-icon-header {
+    font-size: 2.5rem;
+    color: #e6a66a;
+    background-color: #fcf6f0;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.pillar-card-fancy h3 {
+    font-size: 1.4rem;
+    color: #243d3b;
+    margin-bottom: 1rem;
+}
+
+.pillar-card-fancy p {
+    color: #4a5d5b;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* 5. SECCIÓN VALORES: Diseño de Badges */
+.about-values-creative {
+    background: white;
+    padding: 4rem;
+    border-radius: 30px;
+    border: 1px solid #f2ece6;
+    margin-bottom: 5rem;
+}
+
+.values-header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.values-header h2 {
+    font-size: 2.2rem;
+    color: #243d3b;
+    margin-bottom: 0.5rem;
+}
+
+.values-header p {
+    color: #4a5d5b;
+    font-size: 1.1rem;
+}
+
+.values-badges-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .values-badges-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.value-badge {
+    background-color: #fcf6f0;
+    padding: 1.5rem;
+    border-radius: 15px;
+    display: flex;
+    align-items: start;
+    gap: 1.2rem;
+    border: 1px solid #f2e1d0;
+    transition: background-color 0.2s ease;
+}
+
+.value-badge:hover {
+    background-color: white;
+    border-color: #e6a66a;
+}
+
+.value-icon {
+    font-size: 1.5rem;
+    color: #e6a66a;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    margin-top: 3px;
+    box-shadow: 0 4px 10px rgba(230, 166, 106, 0.1);
+}
+
+.value-text {
+    flex: 1;
+}
+
+.value-text strong {
+    display: block;
+    font-size: 1.1rem;
+    color: #243d3b;
+    margin-bottom: 4px;
+}
+
+.value-text span {
+    color: #4a5d5b;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* ============================================================
+   SECCIÓN ACTUALIZADA: Botones Flotantes Creativos
+   ============================================================ */
+.floating-socials-fancy {
+    position: fixed;
+    bottom: 30px; /* Un poco más arriba */
+    right: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1000;
+    align-items: center;
+}
+
+.social-others-col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0; /* Ocultos por defecto */
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none; /* No clickeables cuando están ocultos */
+}
+
+/* Mostrar los otros iconos al pasar el mouse por la columna entera */
+.floating-socials-fancy:hover .social-others-col {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.social-btn-fancy {
+    width: 55px; /* Un poco más grandes */
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem; /* Iconos más grandes */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    position: relative;
+}
+
+.social-btn-fancy i {
+    display: block;
+    line-height: 1;
+}
+
+.social-btn-fancy:hover {
+    transform: scale(1.1) translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Colores de marca */
+.social-btn-fancy.whatsapp {
+    background-color: #25D366;
+    z-index: 2; /* Siempre encima */
+}
+
+.social-btn-fancy.instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+.social-btn-fancy.facebook {
+    background-color: #1877F2;
+}
+
+.social-btn-fancy.tiktok {
+    background-color: #000000;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Animación de Pulso para WhatsApp (El principal) */
+@keyframes pulse-green {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+.pulse-anim {
+    animation: pulse-green 2s infinite;
+}
+
+
+/* --- SECCIÓN NUEVA: Banner Inspiracional de la Frase --- */
+.quote-banner-section {
+    margin-bottom: 5rem;
+}
+
+.quote-card {
+    background: linear-gradient(135deg, #243d3b 0%, #1a2e2c 100%);
+    border-radius: 30px;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    box-shadow: 0 20px 45px rgba(36, 61, 59, 0.2);
+    color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .quote-card {
+        flex-direction: row;
+        padding: 3rem 4rem;
+    }
+}
+
+.quote-image-container {
+    flex: 0 0 260px;
+    max-width: 260px;
+}
+
+.quote-img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.quote-card:hover .quote-img {
+    transform: scale(1.03) rotate(-1deg);
+}
+
+.quote-text-container {
+    flex: 1;
+    position: relative;
+}
+
+.quote-icon {
+    font-size: 3rem;
+    color: #e6a66a;
+    opacity: 0.4;
+    margin-bottom: 1rem;
+}
+
+.quote-text-container h2 {
+    font-size: 2rem;
+    color: #fcf6f0;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.quote-text-container p {
+    color: #b8c9c6;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin: 0;
+}
