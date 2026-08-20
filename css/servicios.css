@@ -1,0 +1,23 @@
+.services-page .page-heading {
+	max-width: 780px;
+}
+
+.services-page .service-card {
+	min-height: 250px;
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.services-page .service-card:hover {
+	transform: translateY(-6px);
+	box-shadow: 0 18px 36px rgba(36, 61, 59, 0.13);
+}
+
+.services-page .service-card-featured:hover {
+	transform: translateY(calc(-0.75rem - 6px));
+}
+
+@media (max-width: 760px) {
+	.services-page .service-card-featured:hover {
+		transform: translateY(-6px);
+	}
+}

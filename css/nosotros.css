@@ -1,0 +1,15 @@
+/* Presentacion de la historia y los valores del centro. */
+.about-page .page-heading {
+	border-left: 4px solid #e6a66a;
+	padding-left: 1.25rem;
+}
+
+.about-page .feature-panel {
+	min-height: 220px;
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.about-page .feature-panel:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 16px 34px rgba(36, 61, 59, 0.12);
+}

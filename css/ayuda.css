@@ -1,0 +1,12 @@
+.help-page .contact-panel {
+	min-height: 245px;
+}
+
+.help-page .contact-panel strong {
+	color: #fffdf9;
+	font-weight: 600;
+}
+
+.help-page .contact-panel .btn:hover {
+	background-color: #f3bd83;
+}

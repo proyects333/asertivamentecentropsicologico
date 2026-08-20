@@ -1,0 +1,13 @@
+.team-card {
+	min-height: 250px;
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.team-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 16px 34px rgba(36, 61, 59, 0.12);
+}
+
+.team-card .role {
+	margin-bottom: 0.65rem;
+}
